@@ -1,6 +1,6 @@
-# 16x2-LCD-Code-4-bit-mode-
+/*# 16x2-LCD-Code-4-bit-mode-
 # 16x2 LCD Display Code for microcontrollers from any family. It uses only 5 GPIO pins of your microcontroller. Pin 5 of you LCD module
-# must be grounded and you have to give proper power supply (see uses of pin 1, 2 and 3 in your LCD data sheets)
+# must be grounded and you have to give proper power supply (see uses of pin 1, 2 and 3 in your LCD data sheets)*/
 
 #include <avr/io.h>
 #define F_CPU 16000000UL
@@ -94,8 +94,8 @@ int main(void)
 	while (1)
 	{
 		LCD_print("This is 8bit LCD");
-		_delay_ma(3000);
-		LCD_set_cusrsor(2,1);
+		_delay_ms(3000);
+		LCD_set_cursor(2,1);
 		LCD_print("this is row 2");
 		_delay_ms(2000);
 		LCD_clear();
